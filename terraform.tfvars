@@ -39,7 +39,7 @@ logging_config = {
 
 origin = {
   fh-57-maintanance = {
-    domain_name         = "mybucketforcloudfrontfortesting.s3.us-east-1.amazonaws.com"
+    domain_name         = "mybucketforcloudfrontfortesting.com"
     connection_attempts = 3
     connection_timeout  = 10
     custom_header       = []
