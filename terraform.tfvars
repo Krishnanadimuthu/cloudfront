@@ -43,10 +43,10 @@ origin = {
     connection_attempts = 3
     connection_timeout  = 10
     custom_header       = []
-    s3_origin_config = {
-      origin_access_identity = "s3_bucket_one" # key in `origin_access_identities`
-      # cloudfront_access_identity_path = "origin-access-identity/cloudfront/E5IGQAA1QO48Z" # external OAI resource
-    }
+  #  s3_origin_config = {
+  #    origin_access_identity = "s3_bucket_one" # key in `origin_access_identities`
+  #    # cloudfront_access_identity_path = "origin-access-identity/cloudfront/E5IGQAA1QO48Z" # external OAI resource
+  #  }
 
     origin_shield = {
       enabled              = false
