@@ -1,4 +1,4 @@
-aliases = [""]
+aliases = ["boomi.fun"]
 
 comment             = "LIVE - Hardcore API"
 enabled             = true
@@ -7,7 +7,7 @@ is_ipv6_enabled     = true
 price_class         = "PriceClass_All"
 retain_on_delete    = false
 wait_for_deployment = false
-web_acl_id          = ""
+#web_acl_id          = "arn:aws:acm:us-east-1:227950108070:certificate/d1127b0b-0a71-40e3-8029-025aa1c99fd6"
 
 # When you enable additional metrics for a distribution, CloudFront sends up to 8 metrics to CloudWatch in the US East (N. Virginia) Region.
 # This rate is charged only once per month, per metric (up to 8 metrics per distribution).
@@ -32,14 +32,14 @@ origin_access_identities = {
 # }
 
 logging_config = {
-  bucket          = ""
+  bucket          = "mysecondbucketforcloudfronttesting"
   prefix          = "cloudfront"
   include_cookies = false
 }
 
 origin = {
   fh-57-maintanance = {
-    domain_name         = ""
+    domain_name         = "mybucketforcloudfrontfortesting.s3.amazonaws.com"
     connection_attempts = 3
     connection_timeout  = 10
     custom_header       = []
@@ -55,7 +55,7 @@ origin = {
   }
 
   falcon-mcs-store-main = { # with origin access identity (legacy)
-    domain_name         = ""
+    domain_name         = "test.com"
     origin_path         = "/main/v1"
     connection_attempts = 3
     connection_timeout  = 10
@@ -74,14 +74,14 @@ origin = {
 
   }
   falcon-menu-bucket = { # with origin access identity (legacy)
-    domain_name         = ""
+    domain_name         = "testt.com"
     connection_attempts = 3
     connection_timeout  = 10
     custom_header       = []
-    s3_origin_config = {
-      origin_access_identity = "s3_test_2" # key in `origin_access_identities`
+   # s3_origin_config = {
+   #   origin_access_identity = "s3_test_2" # key in `origin_access_identities`
       # cloudfront_access_identity_path = "origin-access-identity/cloudfront/E5IGQAA1QO48Z" # external OAI resource
-    }
+  #  }
 
     origin_shield = {
       enabled              = false
@@ -89,7 +89,7 @@ origin = {
     }
   }
   prod_foodhub_alb = { # with origin access identity (legacy)
-    domain_name = ""
+    domain_name = "elb.com"
     custom_origin_config = {
       http_port                = 80
       https_port               = 443
@@ -107,14 +107,14 @@ origin = {
     }
   }
   S3-fh-internationalization = { # with origin access identity (legacy)
-    domain_name         = ""
+    domain_name         = "kk.com"
     connection_attempts = 3
     connection_timeout  = 10
     custom_header       = []
-    s3_origin_config = {
-      origin_access_identity = "s3_test_3" # key in `origin_access_identities`
+  #  s3_origin_config = {
+  #    origin_access_identity = "s3_test_3" # key in `origin_access_identities`
       # cloudfront_access_identity_path = "origin-access-identity/cloudfront/E5IGQAA1QO48Z" # external OAI resource
-    }
+  #  }
 
     origin_shield = {
       enabled              = false
@@ -122,7 +122,7 @@ origin = {
     }
   }
   ELB-frontend-alb-aus-1452346864 = { # with origin access identity (legacy)
-    domain_name = ""
+    domain_name = "krish.com"
     custom_origin_config = {
       http_port                = 80
       https_port               = 443
@@ -140,14 +140,14 @@ origin = {
     }
   }
   prod-cloudfiles-public = { # with origin access identity (legacy)
-    domain_name         = ""
+    domain_name         = "kkk.com"
     connection_attempts = 3
     connection_timeout  = 10
     custom_header       = []
-    s3_origin_config = {
-      origin_access_identity = "s3_test_4" # key in `origin_access_identities`
+   # s3_origin_config = {
+   #   origin_access_identity = "s3_test_4" # key in `origin_access_identities`
       # cloudfront_access_identity_path = "origin-access-identity/cloudfront/E5IGQAA1QO48Z" # external OAI resource
-    }
+   # }
 
     origin_shield = {
       enabled              = false
@@ -155,7 +155,7 @@ origin = {
     }
   }
   falcon-origin = { # with origin access identity (legacy)
-    domain_name = ""
+    domain_name = "boomi.com"
     custom_origin_config = {
       http_port                = 80
       https_port               = 443
@@ -706,7 +706,7 @@ ordered_cache_behavior = [
 ]
 
 viewer_certificate = {
-  acm_certificate_arn            = "arn:aws:acm:us-east-1:227950108070:certificate/fa753be8-a78a-4468-816a-966b48f217d1"
+  acm_certificate_arn            = "arn:aws:acm:us-east-1:227950108070:certificate/d1127b0b-0a71-40e3-8029-025aa1c99fd6"
   cloudfront_default_certificate = false
   ssl_support_method             = "sni-only"
   minimum_protocol_version       = "TLSv1.1_2016"
