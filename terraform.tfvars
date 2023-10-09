@@ -32,7 +32,7 @@ origin_access_identities = {
 # }
 
 logging_config = {
-  bucket          = "mysecondbucketforcloudfronttesting"
+  bucket          = "mysecondbucketforcloudfronttesting.s3.amazonaws.com"
   prefix          = "cloudfront"
   include_cookies = false
 }
