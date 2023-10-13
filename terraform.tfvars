@@ -705,12 +705,12 @@ ordered_cache_behavior = [
 
 ]
 
-viewer_certificate = {
-  acm_certificate_arn            = "arn:aws:acm:us-east-1:227950108070:certificate/d1127b0b-0a71-40e3-8029-025aa1c99fd6"
-  cloudfront_default_certificate = false
-  ssl_support_method             = "sni-only"
-  minimum_protocol_version       = "TLSv1.1_2016"
-}
+#viewer_certificate = {
+ # acm_certificate_arn            = "arn:aws:acm:us-east-1:227950108070:certificate/d1127b0b-0a71-40e3-8029-025aa1c99fd6"
+ # cloudfront_default_certificate = false
+#  ssl_support_method             = "sni-only"
+ # minimum_protocol_version       = "TLSv1.1_2016"
+#}
 
 custom_error_response = [{
   error_code            = 403
