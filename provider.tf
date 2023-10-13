@@ -1,7 +1,5 @@
 provider "aws" {
   region = "us-east-1"
-  access_key = var.access_key
-  secret_key = var.secret_key
 }
 variable "access_key" {
   description = "Controls if CloudFront distribution should be created"
