@@ -32,14 +32,14 @@ origin_access_identities = {
 # }
 
 #logging_config = {
-#  bucket          = "mysecondbucketforcloudfronttesting.s3.amazonaws.com"
+#  bucket          = "configurationfilesaboutmonitoring.s3.amazonaws.com"
 #  prefix          = "cloudfront"
 #  include_cookies = false
 #}
 
 origin = {
   fh-57-maintanance = {
-    domain_name         = "codepipeline-ap-south-1-525746645716.s3.us-east-1.amazonaws.com"
+    domain_name         = "configurationfilesaboutmonitoring.s3.us-east-1.amazonaws.com"
     connection_attempts = 3
     connection_timeout  = 10
     custom_header       = []
