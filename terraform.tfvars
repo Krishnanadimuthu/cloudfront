@@ -39,7 +39,7 @@ origin_access_identities = {
 
 origin = {
   fh-57-maintanance = {
-    domain_name         = "mybucketforcloudfrontfortesting.com"
+    domain_name         = "codepipeline-ap-south-1-525746645716.s3.us-east-1.amazonaws.com"
     connection_attempts = 3
     connection_timeout  = 10
     custom_header       = []
