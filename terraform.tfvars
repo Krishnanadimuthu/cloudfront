@@ -31,11 +31,11 @@ origin_access_identities = {
 #   }
 # }
 
-logging_config = {
-  bucket          = "mysecondbucketforcloudfronttesting.s3.amazonaws.com"
-  prefix          = "cloudfront"
-  include_cookies = false
-}
+#logging_config = {
+#  bucket          = "mysecondbucketforcloudfronttesting.s3.amazonaws.com"
+#  prefix          = "cloudfront"
+#  include_cookies = false
+#}
 
 origin = {
   fh-57-maintanance = {
