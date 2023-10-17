@@ -1,6 +1,6 @@
 aliases = ["boomi.fun"]
 
-comment             = "LIVE - Hardcore API test"
+comment             = "LIVE - Hardcore API"
 enabled             = true
 http_version        = "http2"
 is_ipv6_enabled     = true
